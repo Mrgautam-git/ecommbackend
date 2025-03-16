@@ -6,7 +6,8 @@ const app = express();
 const port = 5000;
 require('dotenv').config(); 
 const firebaseAdmin = require("firebase-admin");
-const bcrypt = require('bcrypt'); 
+const bcrypt = require('bcryptjs');
+
 // Middleware
 app.use(cors());
 app.use(bodyParser.json()); // Parse JSON requests
